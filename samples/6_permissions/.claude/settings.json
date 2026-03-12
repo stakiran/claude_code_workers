@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(npm test)",
+      "Bash(git commit *)",
+      "Read(./src/**)",
+      "Edit(./src/**/*.ts)",
+      "WebFetch(domain:github.com)",
+      "Agent(Explore)",
+      "Agent(Plan)"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(sudo *)",
+      "Read(./.env)",
+      "Read(./secrets/**)",
+      "Edit(./.env*)",
+      "Edit(package-lock.json)"
+    ]
+  }
+}

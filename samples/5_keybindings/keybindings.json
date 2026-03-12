@@ -1,0 +1,29 @@
+{
+  "$schema": "https://www.schemastore.org/claude-code-keybindings.json",
+  "bindings": [
+    {
+      "context": "Global",
+      "bindings": {
+        "ctrl+alt+d": "app:exit",
+        "ctrl+shift+r": "history:search"
+      }
+    },
+    {
+      "context": "Chat",
+      "bindings": {
+        "shift+enter": "chat:submit",
+        "ctrl+e": "chat:externalEditor",
+        "ctrl+k ctrl+s": "chat:stash",
+        "meta+p": "chat:modelPicker",
+        "meta+t": "chat:thinkingToggle"
+      }
+    },
+    {
+      "context": "Confirmation",
+      "bindings": {
+        "y": "confirm:yes",
+        "n": "confirm:no"
+      }
+    }
+  ]
+}

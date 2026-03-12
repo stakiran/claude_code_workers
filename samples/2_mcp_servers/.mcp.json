@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": "Bearer ${GITHUB_TOKEN}"
+      }
+    },
+    "postgres": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-postgres"],
+      "env": {
+        "DATABASE_URL": "${DATABASE_URL:-postgresql://localhost/mydb}"
+      }
+    },
+    "local-filesystem": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["filesystem-server.py", "--root", "./data"],
+      "env": {}
+    }
+  }
+}
